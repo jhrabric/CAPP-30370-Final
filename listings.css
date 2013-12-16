@@ -2,7 +2,19 @@
 	background:white;
 	width:100%;	
 }
-
+.flash{
+font-size:25px;
+animation: colors 7s linear infinite reverse;
+color:red;
+}
+@keyframes colors {
+0% {color:red}
+20% {color:orange}
+40% {color:yellow}
+60% {color:green}
+80% {color:blue}
+100% {color:purple}
+}
 body {
 	
 	background:#f2f5f6;
@@ -33,23 +45,19 @@ max-width:100%;
 	width:100%;
 	margin:0px;	
 	clear:both;
-	background-image:url('simpson real estate.jpg');
+	
 /*	background-color:orange;*/
-	background-repeat:no-repeat;
+	
 }
 
-/*#plus1 {
-	float:right;
-	margin-top:5px;	
-}*/
+
 
 #headerContact {
 	/*float:right;*/
 	font-size:20px;
 	font-weight:bold;
 	margin:25px 0px 0px 0px;
-	/*width:400px;*/
-	height:105px;		
+	/*width:300px;*/		
 	color:black;
 
 }
@@ -333,8 +341,7 @@ max-width:100%;
 	/*width:150px;*/
 	height:auto;
 	position:relative;
-	box-shadow:0 1px 6px #999999;
-	border:2px solid #FFFFFF;
+	
 }
 
 .listing-info {
@@ -532,16 +539,17 @@ max-width:100%;
 }
 .nav-left {
 	background: url(images/nav_left.png) no-repeat top left;
-	/*float: left;*/
-	width: 11px;
+	float: left;
+	
 	height: 35px;
 }
-.nav-right {
+
+/*.nav-right {
 	background: url(images/nav_right.png) no-repeat top right;
 	/*float: left;*/
-	width: 11px;
+	/*width: 11px;
 	height: 35px;
-}
+}*/
 .nav ul {
 	/*width: 648px;*/
 	
@@ -584,8 +592,8 @@ max-width:100%;
 	height:15px;
 }
 .contact {
-	text-align: center
-	font-size:25px;
+	text-align: center;
+
 	color:#036BA7;
 	
 
@@ -595,7 +603,27 @@ max-width:100%;
  @media only screen and (min-width:700px) {	
 	#headerContact {
 		width:400px;
+	}
+	#main{
+	width:700px;
+	}
+	#pagewrap{
+	width:90%;
+	margin:auto;
+		}
 	
-
-	}	
+	.listing-thumb {
+	
+	box-shadow:0 1px 6px #999999;
+	border:2px solid #FFFFFF;
+}	
+	.nav-wrapper{
+	float: left;
+	}
+	.nav li{
+	float: left;
+	}
+	.listing-right{
+	float:right;
+	}
 }
