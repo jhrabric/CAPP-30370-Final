@@ -2,6 +2,7 @@
 <title>listings</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="listings.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
 
@@ -22,14 +23,14 @@
     <div class="nav" role="navigation">
         <ul>
         	<li>
-            	<a href="simpsonrealestate.html">
+            	<a href="simpsonrealestate1.html">
          		    <span class="menu-left"></span>
                     <span class="menu-mid">Home</span>
                     <span class="menu-right"></span>
             	</a>
             </li>
                 	<li>
-            	<a href="listings.html">
+            	<a href="listings1.html">
          		    <span class="menu-left"></span>
                     <span class="menu-mid">Listings</span>
                     <span class="menu-right"></span>
@@ -37,7 +38,7 @@
             </li>
                 	
                 	<li>
-            	<a href="contact2.html">
+            	<a href="contact3.html">
                 	<span class="menu-left"></span>
                     <span class="menu-mid">Contact Us</span>
                     <span class="menu-right"></span>
@@ -71,33 +72,54 @@
 
        
 
-<ul class="listings-container">
+<ul id="listings-container" class="listings">
 <li class="listing-single" id="prop1" style="visibility=visible"><div class="listing-left">
 				
-					<img class="listing-thumb" src="SimpsonRE_1019.jpg"/>
+					<img class="listing-thumb" src="SimpsonRE_1019.jpg" alt="1019"/>
 			
 				</div><div class="listing-right">$390 - $390<br /><span class="listing-info">2014: <span class="listing-Available">Available!</span><br /><span class="listing-info">2015: <span class="listing-Available">Available!</span><br /></span></div><span class="listing-center">1019 County Line Rd.</a><br /><span class="listing-info">Beds: 3<br />Baths: 1<br /></span></span><div class="listing-bottom"></div></li>
 
 
   <li class="listing-single" id="prop2" style="visibility=visible"><div class="listing-left">
 				
-					<img class="listing-thumb" src="SimpsonRE_1023.jpg"/>
+					<img class="listing-thumb" src="SimpsonRE_1023.jpg" alt="1023"/>
 				
 				</div><div class="listing-right">$500 - $450<br /><span class="listing-info">2014: <span class="listing-Available">Available!</span><br /><span class="listing-info">2015: <span class="listing-Available">Available!</span><br /></span></div><span class="listing-center">1023 County Line Rd.</a><br /><span class="listing-info">Beds:  5/6<br />Baths:  2<br /></span></span><div class="listing-bottom"></div></li>
       
       <li class="listing-single" id="844 Lancaster Ave." style="visibility=visible"><div class="listing-left">
 				
-					<img class="listing-thumb" src="SimpsonRE_844.jpg")/>
+					<img class="listing-thumb" src="SimpsonRE_844.jpg")alt="844"/>
 			
 				</div><div class="listing-right">$475 - $425<br /><span class="listing-info">2014: Leased!<br /><span class="listing-info">2015: <span class="listing-Available">Available!</span><br /></span></div><span class="listing-center">1011 East Cedar St.<br /><span class="listing-info">Beds: 5/6<br />Baths: 3<br /></span></span><div class="listing-bottom"></div></li>
 
-		
+		</ul>
+		<script>
+    
+
+  
+
+    $(listings-container).on('click', '1019', function(){
+      console.log( 'Width: ' + listings-container.children(this).width() );
+      console.log( 'Height: ' + listings-container.children(this).height() );
+	  console.log( 'Alt: ' + listings-container.chilren(this).alt() );
+    });
+
+    
+    </script>
     
     </div></div>
     
     <div id="footer" role="footer">
 	John Hrabrick </br>100 Main Building, Notre Dame IN 46556</br>574 631 5000</br> donotreply@nd.edu 
 </div></div>
+ <script>
+
+    $(window).resize(function(){
+      console.log( 'Width: ' + $(window).width() );
+      console.log( 'Height: ' + $(window).height() );
+    });
+
+    </script>
 
 </body>    
        
