@@ -2,6 +2,7 @@
 <title>Contact Info</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="3columnlayout.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
 
@@ -16,6 +17,13 @@
 	<div id="content">
 		<h2>Properties</h2>
     <p>This column contains property photos </p>
+	<img id="house" class="listing-thumb" src="SimpsonRE_1023.jpg" alt="1023"/>
+	<button id="hide-house">Hide the House</button><br>
+	<script>
+  $('#hide-house').on('click', function(){
+    $('#house').hide();
+  });
+  </script>
 	</div>
 	
 	<div id="middle">

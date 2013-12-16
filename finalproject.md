@@ -17,3 +17,5 @@ The CSS is at the bottom of the style sheet.
 
 The background image is styled for the #header on the 3 Column Layout page.
 
+The visual jquery interaction is on the 3column page where you click the button that says
+"Hide the House".
