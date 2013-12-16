@@ -4,17 +4,41 @@
 }
 .flash{
 font-size:25px;
+-webkit-animation: changeColor 5s infinite; /* Safari 4+ */
+                -moz-animation: changeColor 5s infinite; /* Fx 5+ */
+                
+                animation: changeColor 5s infinite; /* IE 10+ */
 animation: colors 7s linear infinite reverse;
 color:red;
 }
-@keyframes colors {
-0% {color:red}
-20% {color:orange}
-40% {color:yellow}
-60% {color:green}
-80% {color:blue}
-100% {color:purple}
-}
+@keyframes changeColor {
+              0% {
+                color: 'red';
+              }
+
+              100% {
+                color: 'blue';
+              }
+            }
+            @-moz-keyframes changeColor {
+              0% {
+                color: 'red';
+              }
+
+              100% {
+                color: 'blue';
+              }
+            }
+            @-webkit-keyframes changeColor {
+              0% {
+                color: 'red';
+              }
+
+              100% {
+                color: 'blue';
+              }
+            }
+			
 body {
 	
 	background:#f2f5f6;
