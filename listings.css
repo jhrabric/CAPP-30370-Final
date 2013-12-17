@@ -13,7 +13,7 @@ color:red;
 }
 @keyframes changeColor {
               0% {
-                color: 'red';
+                color: red;
               }
 
               100% {
@@ -21,27 +21,24 @@ color:red;
               }
             }
             @-moz-keyframes changeColor {
-              0% {
-                color: 'red';
-              }
-
-              100% {
-                color: 'blue';
-              }
+              
             }
             @-webkit-keyframes changeColor {
               0% {
-                color: 'red';
+                color: red;
               }
 
               100% {
-                color: 'blue';
+                color: blue;
               }
             }
 			
 body {
 	
 	background:#f2f5f6;
+}
+#house{
+width:100%;
 }
 img{
 max-width:100%;
@@ -363,6 +360,7 @@ max-width:100%;
 
 .listing-thumb {
 	/*width:150px;*/
+
 	height:auto;
 	position:relative;
 	

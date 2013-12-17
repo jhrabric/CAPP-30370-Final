@@ -16,15 +16,14 @@ body{
 }
 #content {
 	width: 290px;
-	float: left;
+	/*float: left;*/
 	padding: 5px 15px;
-	background-image:url('SimpsonRE_844.JPG');
-	background-repeat: no-repeat;
+	
 }
 
 #middle {
 	width: 294px; /* Account for margins + border values */
-	float: left;
+	/*float: left;*/
 	padding: 5px 15px;
 	margin: 0px 5px 5px 5px;
 }
@@ -32,13 +31,27 @@ body{
 #sidebar {
 	width: 270px;
 	padding: 5px 15px;
-	float: left;
+	/*float: left;*/
 }
 #footer {
 	clear: both;
 	padding: 0 15px;
 }
+#house{
+width:100%;
+}
 
+@media only screen and (min-width:700px) {
+#content{
+float:left;
+}
+#middle{
+float:right;
+}
+#sidebar{
+float:left;
+}
+}
 
 @media screen and (max-width: 1000px) {
 	
